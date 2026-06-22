@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="glass">
+
+
+<h1>
+Create Account
+</h1>
+
+
+<form method="POST">
+
+
+<input name="name"
+placeholder="Full Name">
+
+
+<input name="phone"
+placeholder="Phone Number">
+
+
+<input name="email"
+placeholder="Email">
+
+
+<select name="college">
+
+
+{% for c in colleges %}
+
+<option>{{c}}</option>
+
+{% endfor %}
+
+
+</select>
+
+
+<button>
+Register
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+
+</html>
